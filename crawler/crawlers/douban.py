@@ -3,7 +3,6 @@ from .base import Base
 #https://movie.douban.com/top250?start=
 class Douban(Base):
     def __init__(self, save_path):
-        # super().__init__(self, {"url":"https://movie.douban.com/top250",  "save_path":save_path});
         self.collections = []
         self.url = "https://movie.douban.com/top250"
         self.save_path = save_path
